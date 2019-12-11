@@ -13,7 +13,7 @@ newline     (\r?\n)
 whitespace  ([\t ]|{newline})
 id          {letter}({letter}|{digit}|_)*
 num         {digit}+(.{digit}+)?(E[+-]?{digit}+)?
-str         (\"([^"\\]?(\\["n\\])?)*\")
+str         (\"([^"\\\n]?(\\["n\\])?)*\")
 reserved    ((int)|(float)|(void)|(write)|(read)|(while)|(do)|(if)|(then)|(else)|(return)|(volatile))
 sign        [(){}?,:;&]
 comment     #(.*)
